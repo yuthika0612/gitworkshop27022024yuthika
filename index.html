@@ -1,0 +1,49 @@
+<html>
+<title>
+LEARNING HTML.COM
+</title>
+<style>
+h1{text - align: center;}
+</style>
+<body>
+<script>
+function show(){
+          var name = document.getElementById("name").value;           
+          var gender = document.getElementById("gender").value;
+         // var genderArray = document.getElementById("gender");
+         // var selectedIndex = genderArray.selectedIndex;
+          //console.log('genderArray='+JSON.stringif(genderArray));
+          //console.log('selectedIndex='+selectedIndex);
+          //console.log('gender='+gender);
+          //var gender = genderArrary[selectedIndex];
+          var message = '';
+          if(gender === 'male')
+	   {
+	        message = 'Hello Mr. '+name;		
+	   }
+else if(gender ===  'female')
+	  { 
+                message = 'Hello Ms. '+name;
+          }
+	else
+	 {
+               message = 'Hello ' +name;
+         }
+     console.log(name);
+     alert(message);
+}
+</script>
+<h1>GIT AND GITHUB</h1>
+
+Hello!!
+<p>please enter your login credentials</p>
+<label>Name:</label><input id= "name"></input><br>
+<label>Gender:</label><!--<input id="gender"/>-->
+<select id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select>
+<input type="submit" onclick="show()"/>
+
+</body>
+</html>
